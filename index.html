@@ -10,8 +10,8 @@
   <body>
     <header>
       <div class="container">
-        <div id="branding">
-          <img src="https://wac-cdn.atlassian.com/dam/jcr:616e6748-ad8c-48d9-ae93-e49019ed5259/Atlassian-horizontal-blue-rgb.svg?cdnVersion=le" style="max-width:200px;">
+        <div class="branding">
+          <a href="#"><img src="https://wac-cdn.atlassian.com/dam/jcr:616e6748-ad8c-48d9-ae93-e49019ed5259/Atlassian-horizontal-blue-rgb.svg?cdnVersion=le" style="max-width:200px;"></a>
         </div>
         <nav>
           <div id="menu_1">
@@ -23,15 +23,8 @@
           </div>
           <div id="menu_2">
             <ul>
-              <li><a href="#">Try free</a></li>
+              <li class="active"><a href="#">Try free</a></li>
               <li><a href="#">Buy now</a></li>
-            </ul>
-          </div>
-          <div id="menu_3">
-            <ul>
-              <li><a href="#">Join your team</a></li>
-              <li>|</li>
-              <li><a href="#">Login</a></li>
             </ul>
           </div>
         </nav>
@@ -40,19 +33,19 @@
 
     <section id="showcase">
       <div class="container">
-        <p>announcing</p>
-        <h3>AgileCraft</h3>
+        <p id="announcing">ANNOUNCING</p>
+        <img src="https://wac-cdn.atlassian.com/dam/jcr:5148fb2c-e244-455b-afed-ed1ba3e45b93/AC-logo.svg?cdnVersion=le" style="height:125px;">
         <p>We’re excited to announce Atlassian has agreed to acquire AgileCraft, a leader in business agility, to extend the power of agile teams to the enterprise.</p>
-        <button type="submit" id="btn_learnmore">Learn more</button>
+        <button type="submit" id="btn_learnmore"><b>Learn more</b></button>
       </div>
     </section>
 
-    <section id="hot-event">
+    <section id="latest-event">
       <div class="container">
         <img src="./img/Submit2019.png" style="max-width:200px;">
-        <h4>Summit 2019 is heading to Las Vegas</h4>
-        <p>Extend your professional network, sharpen your skills, and learn new ways to work at our annual user conference. Join us on April 9-11.</p>
-        <button type="submit" id="btn_register">Register now</button>
+          <h2>Summit 2019 is heading to Las Vegas</h2>
+          <p>Extend your professional network, sharpen your skills, and learn new ways to work at our annual user conference. Join us on April 9-11.</p>
+          <button type="submit" id="btn_register">Register now</button>
       </div>
     </section>
 
@@ -336,7 +329,10 @@
 
 
     <footer>
-      <p>Copyright © 2019 Atlassian</p>
+      <div class="container">
+        <p>Copyright © 2019 Atlassian</p>
+      </div>
+
     </footer>
 
 

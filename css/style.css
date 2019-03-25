@@ -1,0 +1,146 @@
+body {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 15px;
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+}
+
+/* Global */
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* header */
+
+
+header {
+  color: black;
+  min-height: 50px;
+  padding-top: 25px;
+}
+
+header a {
+  text-decoration: none;
+  color: #42526E;
+  font-size: 16px;
+}
+
+header li {
+  float: left;
+  display: inline;
+  padding: 0 15px 0 15px;
+}
+header #branding {
+  float: left;
+}
+
+header nav {
+  position: relative;
+  width: auto;
+  height: auto;
+}
+header #menu_1 {
+  position: absolute;
+  bottom:4px;
+  padding-left: 210px;
+}
+
+header #menu_2 {
+  position: absolute;
+  right: 0;
+  bottom: 4px;
+}
+
+
+/* showcase */
+
+#showcase {
+  background-image: url("https://wac-cdn.atlassian.com/dam/jcr:b98acc66-09c9-482d-b442-fbb2ccbff414/AC+Atlassian-HP-hero.svg?cdnVersion=le");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 550px;
+  text-align: center;
+}
+
+#showcase img {
+  padding-top: 100px;
+}
+
+#showcase p {
+  position: relative;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: normal;
+}
+#announcing {
+  position: absolute;
+  top: 100px;
+  font-weight: lighter;
+}
+
+#showcase button {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: Transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+}
+
+#showcase button:hover {
+  background-color: #808080;
+}
+
+
+/* Latest-Event */
+
+#latest-event {
+  color: #42526E;
+  padding: 0;
+  margin: 0;
+  min-height: 60px;
+  font-size: 16px;
+  position: relative;
+  background-color: #F4F5F7;
+
+}
+
+#latest-event img {
+  float: left;
+  padding-top: 30px;
+  padding-left: 190px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+}
+#latest-event h2 {
+  padding-top: 40px;
+  font-weight: 500;
+}
+
+
+
+
+
+#latest-event button {
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: Transparent;
+  color: #244599;
+  border: 1px solid #244599;
+  border-radius: 4px;
+}
+
+#latest-event button:hover {
+  background-color: #e1e4ea;
+}
