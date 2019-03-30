@@ -1,0 +1,102 @@
+@media screen and (max-width: 768px) {
+  /* header */
+  header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+
+  header img, header li, header #menu_2 li {
+    float: none;
+  }
+
+  header nav #menu_2 {
+    float: right;
+    margin-top: -30px;
+  }
+
+  header nav #menu_1 {
+    float: left;
+    margin-left: -10px;
+  }
+
+  /* tools_boxes */
+  #tools_boxes {
+    padding: 0;
+  }
+
+  /* atlassian_packages */
+  #atlassian_packages .atlassian_package {
+    padding: 20px;
+  }
+
+
+  /* recommended_reading_lists */
+  #recommended_reading_lists {
+    padding: 0;
+  }
+
+  #recommended_reading_lists .list {
+    padding: 10px;
+  }
+
+
+/* atlassian_navigation */
+
+#atlassian_navigation {
+  padding: 30px 0 30px 0;
+  position: relative;
+}
+
+#atlassian_navigation .navigation {
+  padding: 0 30px 0 10px;
+}
+
+#atlassian_navigation img {
+  position: absolute;
+  top: -2px;
+  left: 50px;
+}
+
+#atlassian_navigation li {
+  font-size: 13px;
+}
+
+#atlassian_navigation h4 {
+  font-size: 12px;
+  font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
