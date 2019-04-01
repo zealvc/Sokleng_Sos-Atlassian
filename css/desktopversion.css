@@ -29,6 +29,8 @@ a:hover {
 }
 
 
+
+
 /* header */
 
 header {
@@ -105,7 +107,7 @@ header #menu_2 {
   background-color: #808080;
 }
 
-/* Latest-Event */
+/* latest-event */
 
 #latest-event {
   color: #42526E;
@@ -118,6 +120,7 @@ header #menu_2 {
 #latest-event img  {
   float: left;
   padding-right: 30px;
+  max-width:200px;
 }
 
 #latest-event button {
@@ -142,7 +145,7 @@ header #menu_2 {
   margin: 0;
   text-align: center;
   font-weight: lighter;
-  line-height: 20px;
+  line-height: 25px;
   color: #42526E;
 }
 
@@ -223,8 +226,7 @@ article#main_left_col {
   min-width: 50px;
   color: #42526E;
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 50px;
+  padding: 40px 0;
 }
 
 
@@ -262,6 +264,7 @@ article#main_left_col {
   float: left;
   padding-right: 60px;
   padding-bottom: 60px;
+  max-width:190px;
 }
 
 #indroducing_playbook a {
@@ -326,7 +329,17 @@ article#main_left_col {
   padding: 0 10px;
 }
 
+#atlassian_packages .atlassian_package {
+  float: left;
+  background-color: #F4F5F7;
+  padding: 45px;
+  transition: 0.3s;
+  min-height: 145px;
+}
 
+#atlassian_packages .atlassian_package:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
 #atlassian_packages img {
   float: left;
   padding-right: 30px;
@@ -343,19 +356,6 @@ article#main_left_col {
 #atlassian_packages a:hover {
   text-decoration: underline;
 }
-
-#atlassian_packages .atlassian_package {
-  float: left;
-  background-color: #F4F5F7;
-  padding: 45px;
-  transition: 0.3s;
-  min-height: 145px;
-}
-
-#atlassian_packages .atlassian_package:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
 
 /* recommended_reading_header */
 #recommended_reading_header {

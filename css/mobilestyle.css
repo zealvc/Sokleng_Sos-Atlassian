@@ -1,0 +1,89 @@
+@media screen and (max-width: 425px) {
+  .container {
+    width: 100%;
+  }
+
+/* showcase */
+#showcase {
+  font-size: 17px;
+  padding: 0;
+  margin: 0;
+}
+
+/* latest-event */
+#latest-event {
+  padding: 30px 0;
+}
+
+#latest-event img {
+  float: none;
+  max-width: 300px;
+  height: auto;
+  padding: 0 9%;
+}
+
+/* tools_list_hearder */
+#tools_list_hearder {
+  padding: 0;
+}
+
+#tools_list_hearder h2 {
+  font-size: 25px;
+}
+
+/* get_started_free */
+#get_started_free h2 {
+  font-size: 18px;
+}
+
+/* indroducing_playbook */
+
+#indroducing_playbook {
+  padding: 0;
+}
+
+#indroducing_playbook img {
+  float: none;
+  padding: 0 20%;
+}
+
+#indroducing_playbook h3 {
+  font-size: 19px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

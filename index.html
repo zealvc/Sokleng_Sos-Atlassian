@@ -2,10 +2,11 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Sokleng Sos">
     <link rel="stylesheet" href="./css/desktopversion.css">
     <link rel="stylesheet" href="./css/tabletstyle.css">
+    <link rel="stylesheet" href="./css/mobilestyle.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>Atlassian | Software Development and Collaboration Tools</title>
   </head>
@@ -37,7 +38,7 @@
     <section id="showcase">
       <div class="container">
         <p id="announcing">ANNOUNCING</p>
-        <img src="https://wac-cdn.atlassian.com/dam/jcr:5148fb2c-e244-455b-afed-ed1ba3e45b93/AC-logo.svg?cdnVersion=le" style="height:125px;">
+        <img src="https://wac-cdn.atlassian.com/dam/jcr:5148fb2c-e244-455b-afed-ed1ba3e45b93/AC-logo.svg?cdnVersion=le" style="height:120px;">
         <p>We’re excited to announce Atlassian has agreed to acquire AgileCraft, a leader in business agility, to extend the power of agile teams to the enterprise.</p>
         <button type="submit" id="btn_learnmore"><b>Learn more</b></button>
       </div>
@@ -45,10 +46,10 @@
 
     <section id="latest-event">
       <div class="container">
-        <img src="./img/Submit2019.png" style="max-width:200px;">
+        <img src="./img/Submit2019.png">
           <h2>Watch Summit 2019 live</h2>
           <p>Extend your professional network, sharpen your skills, and learn new ways to work at our annual user conference. Join us on April 9-11.</p>
-          <button type="submit">Register now</button>
+          <button type="submit">Get access</button>
       </div>
     </section>
 
@@ -151,7 +152,7 @@
 
     <section id="indroducing_playbook">
       <div class="container">
-        <img src="https://wac-cdn.atlassian.com/dam/jcr:15e1a99e-c74e-4617-b62b-f1f525e45b53/playsillustrationclean510x450-05.png?cdnVersion=le" alt="Team Playbook" class="component__image" style="width:190px;">
+        <img src="https://wac-cdn.atlassian.com/dam/jcr:15e1a99e-c74e-4617-b62b-f1f525e45b53/playsillustrationclean510x450-05.png?cdnVersion=le">
         <h3>Introducing the Atlassian Team Playbook</h3>
         <p>This ain't your CEO's ivory-tower management book. It's by teams, for teams. You'll find step-by-step guides for tracking your team's health, and plays that build your Get $#!τ Done™ muscle.</p>
         <a href="#">Learn more <svg class="link-arrow-image" width="11px" height="8px" viewBox="0 0 11 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g class="group-path" transform="translate(-138.000000, -586.000000)" fill="#0052CC"><path d="M145.2803,586.507862 L144.2193,587.568863 L145.9393,589.287862 L138.7503,589.287862 C138.3363,589.287862 138.0003,589.623862 138.0003,590.037862 C138.0003,590.451862 138.3363,590.787862 138.7503,590.787862 L145.9393,590.787862 L144.2193,592.507862 L145.2803,593.568863 L148.8103,590.037862 L145.2803,586.507862 Z" id="Fill-1"></path></g></g></svg>
@@ -163,10 +164,12 @@
     <section id="client_companies">
       <div class="container">
         <h2>Powering innovation at 125,000+ companies worldwide</h2>
-        <img src="./img/client-companies.png" style="height: auto; width:100%;">
+        <picture>
+          <source media="(min-width: 0px) and (max-width: 538px)" srcset="https://wac-cdn.atlassian.com/dam/jcr:543689df-87a0-4c80-b753-3ad484e380c2/customer-logos-stacked.png?cdnVersion=le">
+          <img src="./img/client-companies.png" style="height: auto; max-width:100%;">
+        </picture>
       </div>
     </section>
-
     <section id="clients_showcase">
       <div class="colcontainer" style="display:table;width:100%;">
         <div class="col_box">
