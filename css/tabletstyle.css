@@ -4,7 +4,9 @@
     padding-left: 0;
     padding-right: 0;
   }
-
+  header button {
+    padding: 5px 10px;
+  }
 
   header img, header li, header #menu_2 li {
     float: none;
@@ -17,7 +19,12 @@
 
   header nav #menu_1 {
     float: left;
-    margin-left: -10px;
+    margin-left: -7px;
+  }
+
+  header #menu_3 {
+    right: 30px;
+    margin-top: -25px;
   }
 
   /* tools_boxes */
@@ -25,19 +32,43 @@
     padding: 0;
   }
 
-  /* atlassian_packages */
-  #atlassian_packages .atlassian_package {
+  /* clients_showcase */
+
+  #clients_showcase .card {
+    min-width:30%;
+  }
+
+  #clients_showcase .decotrate_card {
     padding: 20px;
   }
+
+  #clients_showcase p {
+    font-size: 14px;
+  }
+
+
+
+  /* atlassian_packages */
+#atlassian_packages .package {
+  padding: 40px;
+  flex: 0 0 35%;
+}
+#atlassian_packages h3 {
+  font-size: 14px;
+}
+#atlassian_packages p {
+  font-size: 13px;
+}
+
+
+
+
+
 
 
   /* recommended_reading_lists */
   #recommended_reading_lists {
     padding: 0;
-  }
-
-  #recommended_reading_lists .list {
-    padding: 10px;
   }
 
 

@@ -1,7 +1,33 @@
 @media screen and (max-width: 425px) {
+
+  /* Global */
   .container {
     width: 100%;
   }
+
+  p {
+    font-size: 14px;
+  }
+
+  .hide {
+    display: block;
+  }
+
+
+  /* header */
+header{
+    position: relative;
+  }
+.hide_navbar_properties {
+  display: none;
+}
+.navbar_properties_for_mobile {
+  position: absolute;
+  display: inline-block;
+  padding: 0;
+  margin-top: -25px;
+  right: 0px;
+}
 
 /* showcase */
 #showcase {
@@ -30,6 +56,27 @@
 #tools_list_hearder h2 {
   font-size: 25px;
 }
+/* tools_boxes */
+#tools_boxes {
+  padding: 0;
+}
+
+#tools_boxes .box {
+  max-width: 95%;
+}
+
+aside#tools_feature_img {
+  float: none;
+  margin-top: auto;
+  width: 95%;
+}
+
+
+article#main_left_col {
+  width: 95%;
+}
+
+
 
 /* get_started_free */
 #get_started_free h2 {
@@ -51,37 +98,78 @@
   font-size: 19px;
 }
 
+/* clients_showcase */
+#clients_showcase {
+  padding: 40px 0;
+  margin: auto;
+}
+
+#clients_showcase .cards {
+  flex-direction: column;
+}
+
+/* atlassian_packages */
+
+#atlassian_packages .packages{
+  flex-direction: column;
+}
+
+
+/* atlassian_navigation */
+#recommended_reading_lists .lists {
+  flex-direction: column;
+}
+
+/* atlassian_navigation */
+#atlassian_navigation {
+  padding: 30px 0;
+}
+
+#atlassian_navigation img {
+  margin-left: -9px;
+}
+
+#atlassian_navigation .navigation {
+  width: 35%;
+  padding: 0 5%;
+}
+
+/* footer */
+footer li {
+  padding: 0;
+  display: list-item;
+  line-height: 1.5;
+}
+
+footer #lang-opt {
+  float: none;
+}
+
+footer #social-media-icon {
+  float: left;
+}
+
+footer #social-media-icon li {
+  float: none;
+  display: inline;
+  padding: 0 5px;
+}
+
+}
 
 
 
 
+@media screen and (max-width: 320px) {
+  .navbar_properties_for_mobile {
+    right: -17px;
+    margin-top: -27px;
+  }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  #latest-event img {
+    max-width: 230px;
+  }
 
 
 

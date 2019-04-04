@@ -28,9 +28,6 @@ a:hover {
   text-decoration: underline;
 }
 
-
-
-
 /* header */
 
 header {
@@ -42,7 +39,7 @@ header {
 header button {
   float: left;
   cursor: pointer;
-  padding: 5px 10px;
+  padding: 5px;
   font-size: 15px;
   background-color: Transparent;
   color: #42526E;
@@ -71,8 +68,33 @@ header img {
   float: left;
 
 }
-header #menu_2 {
+
+header #menu_2{
+  position: relative;
   float: right;
+  left: -130px;
+}
+
+header #menu_3 {
+  position: absolute;
+  right: 80px;
+  margin-top: 5px;
+  padding: 0;
+}
+
+header #menu_3 a {
+  color: #42526E;
+  padding: 5px;
+}
+
+#left_border {
+  border-left: 1px solid #bfc9d9;
+}
+
+
+
+.navbar_properties_for_mobile {
+  display: none;
 }
 
 
@@ -93,6 +115,11 @@ header #menu_2 {
 #showcase #announcing {
   padding-top: 90px;
 }
+#showcase img {
+  max-width: 350px;
+  height: auto;
+}
+
 
 #showcase button {
   padding: 10px 20px;
@@ -291,70 +318,69 @@ article#main_left_col {
 /* clients_showcase */
 #clients_showcase {
   color: #42526E;
+  padding: 40px 5%;
+  margin: auto;
 }
 
-#clients_showcase p {
-  overflow: hidden;
+#clients_showcase .cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+#clients_showcase .card {
+    flex: 0 0;
+    min-width: 30%;
+    padding: 0;
+    margin: 10px;
+    box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.3);
+  }
+
+#clients_showcase .decotrate_card {
+  padding: 40px;
 }
 
 #clients_showcase a {
-  color:#0033cc;
-}
-
-
-#clients_showcase .col_box {
-  display: table-cell;
-  padding: 10px;
-  width: 30%;
-  border-right: 10px solid #ffffff;
-
-}
-
-#clients_showcase .decorate_inside_property {
-  padding: 40px;
-  line-height: 25px;
-  margin-top: -5px;
+  color: #0033cc;
 }
 
 /* atlassian_packages */
 #atlassian_packages {
   color: #42526E;
-  font-size: 14px;
+  font-size: 15px;
   margin: auto;
-  padding: 60px 18px 0 0;
-}
-#atlassian_packages .atlassian_packages_column {
-  float: left;
-  max-width: 47%;
-  padding: 0 10px;
+  padding: 0;
 }
 
-#atlassian_packages .atlassian_package {
-  float: left;
+#atlassian_packages .packages {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+#atlassian_packages .package {
+  padding: 30px;
+  flex: 0 0 40%;
   background-color: #F4F5F7;
-  padding: 45px;
-  transition: 0.3s;
-  min-height: 145px;
+  margin: 10px;
 }
 
-#atlassian_packages .atlassian_package:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
 #atlassian_packages img {
   float: left;
-  padding-right: 30px;
-  padding-top: 20px;
+  padding-right:40px;
+  margin-top: 30px;
+}
+#atlassian_packages h3 {
+  font-size: 20px;
 }
 
 #atlassian_packages p {
   overflow: hidden;
+  font-size: 18px;
 }
 #atlassian_packages a {
-  color: #3366ff;
   text-decoration: none;
-}
-#atlassian_packages a:hover {
-  text-decoration: underline;
+  color: #42526E;
 }
 
 /* recommended_reading_header */
@@ -373,26 +399,36 @@ article#main_left_col {
 #recommended_reading_lists {
   color: #42526E;
   padding: 30px 5% 30px 5%;
+  margin: auto;
+  line-height: 2;
+}
+
+#recommended_reading_lists .lists {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
 }
 
 #recommended_reading_lists .list {
-  float: left;
-  width: 28%;
-  padding: 19px;
+  flex: 0 0 30%;
+  margin: 10px;
 }
-
 #recommended_reading_lists img {
   float: left;
-  padding: 10px 15px 0 15px;
+  padding-right: 10px;
 }
 
-#recommended_reading_lists li {
-  color: #3366ff;
-  cursor: pointer;
-  line-height: 30px;
-  font-size: 15px;
-  overflow: hidden;
+#recommended_reading_lists h3 {
+  margin-top: 1px;
+
 }
+#recommended_reading_lists li {
+  color: #0033cc;
+}
+
+
+
+
 /* atlassian_navigation */
 
 #atlassian_navigation {
@@ -460,4 +496,16 @@ footer #footer-nav {
 footer #social-media-icon {
   float: right;
   margin-top: -15px;
+}
+
+/* UHD Screen */
+@media screen and (min-width: 1500px) {
+  .container {
+    max-width: 50%;
+  }
+
+  header #menu_3 {
+    right: 650px;
+  }
+
 }

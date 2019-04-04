@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Sokleng Sos">
-    <link rel="stylesheet" href="./css/desktopversion.css">
+    <link rel="stylesheet" href="./css/desktopstyle.css">
     <link rel="stylesheet" href="./css/tabletstyle.css">
     <link rel="stylesheet" href="./css/mobilestyle.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -17,19 +17,27 @@
           <a href="#"><img src="https://wac-cdn.atlassian.com/dam/jcr:616e6748-ad8c-48d9-ae93-e49019ed5259/Atlassian-horizontal-blue-rgb.svg?cdnVersion=le" style="max-width:200px;"></a>
         </div>
         <nav>
-          <div id="menu_1">
+          <div id="menu_1" class="hide_navbar_properties">
             <ul>
               <li><button type="submit">Products</button></li>
               <li><button type="submit">For teams</button></li>
               <li><button type="submit">Support</button></li>
             </ul>
           </div>
-          <div id="menu_2">
+          <div id="menu_2" class="hide_navbar_properties">
             <ul>
               <li ><button class="try_free_btn" type="submit">Try free</button></li>
               <li><button type="submit">Buy now</button></li>
               <li><button  type="submit" ><i class="fas fa-search"></i></button></li>
             </ul>
+          </div>
+          <div id="menu_3" class="hide_navbar_properties">
+            <a href="#">Join your team</a>
+            <a href="#" id="left_border"> Login</a>
+          </div>
+          <div class="navbar_properties_for_mobile">
+            <li><button  type="submit" ><i class="fas fa-search"></i></button></li>
+            <li><button  type="submit" ><i class="fas fa-bars"></i></button></li>
           </div>
         </nav>
       </div>
@@ -38,7 +46,7 @@
     <section id="showcase">
       <div class="container">
         <p id="announcing">ANNOUNCING</p>
-        <img src="https://wac-cdn.atlassian.com/dam/jcr:5148fb2c-e244-455b-afed-ed1ba3e45b93/AC-logo.svg?cdnVersion=le" style="height:120px;">
+        <img src="https://wac-cdn.atlassian.com/dam/jcr:5148fb2c-e244-455b-afed-ed1ba3e45b93/AC-logo.svg?cdnVersion=le">
         <p>We’re excited to announce Atlassian has agreed to acquire AgileCraft, a leader in business agility, to extend the power of agile teams to the enterprise.</p>
         <button type="submit" id="btn_learnmore"><b>Learn more</b></button>
       </div>
@@ -170,60 +178,62 @@
         </picture>
       </div>
     </section>
-    <section id="clients_showcase">
-      <div class="colcontainer" style="display:table;width:100%;">
-        <div class="col_box">
-            <img src="https://wac-cdn.atlassian.com/dam/jcr:a65f22b0-8cd0-4079-a4b0-2cf87db32da5/Telegraph.jpg?cdnVersion=le" style="width:100%;height:230px;">
-            <div class="decorate_inside_property">
-              <img class="push_card_item_bottom" src="https://wac-cdn.atlassian.com/dam/jcr:d1587298-f751-488d-bcf0-ec81b30ee936/TheTelegraph_2x.png?cdnVersion=le" style="width:192px;">
-              <p class="push_card_item_bottom">How better resolution times and customer support helps The Telegraph reach 25M users a month.</p>
-              <a href="#">Read their story <svg class="link-arrow-image" width="11px" height="8px" viewBox="0 0 11 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g class="group-path" transform="translate(-138.000000, -586.000000)" fill="#0052CC"><path d="M145.2803,586.507862 L144.2193,587.568863 L145.9393,589.287862 L138.7503,589.287862 C138.3363,589.287862 138.0003,589.623862 138.0003,590.037862 C138.0003,590.451862 138.3363,590.787862 138.7503,590.787862 L145.9393,590.787862 L144.2193,592.507862 L145.2803,593.568863 L148.8103,590.037862 L145.2803,586.507862 Z" id="Fill-1"></path></g></g></svg>
-              </a>
-            </div>
-        </div>
 
-        <div class="col_box">
-            <img src="https://wac-cdn.atlassian.com/dam/jcr:6d9dff44-2ca5-4310-b2f0-a7a88e67fe95/Customers-ANZ.jpg?cdnVersion=le" style="width:100%;height:230px;">
-            <div class="decorate_inside_property">
-              <img class="push_card_item_bottom"src="https://wac-cdn.atlassian.com/dam/jcr:9ef4193b-0ef1-444f-8fbe-a37471ef4791/anz_x2.png?cdnVersion=le" style="width:121px;">
-              <p class="push_card_item_bottom">This 200-year old bank is still innovating and changing the way their 50,000 employees think and work.</p>
+    <section id="clients_showcase">
+      <div class="container">
+        <main class="cards">
+          <article class="card">
+              <img src="https://wac-cdn.atlassian.com/dam/jcr:a65f22b0-8cd0-4079-a4b0-2cf87db32da5/Telegraph.jpg?cdnVersion=le" style="width:100%;height:auto;">
+              <div class="decotrate_card">
+                <img src="https://wac-cdn.atlassian.com/dam/jcr:d1587298-f751-488d-bcf0-ec81b30ee936/TheTelegraph_2x.png?cdnVersion=le" style="width:180px;" id="company_logo_on_ipad">
+                <p>How better resolution times and customer support helps The Telegraph reach 25M users a month.</p>
+                <a href="#">Read their story <svg class="link-arrow-image" width="11px" height="8px" viewBox="0 0 11 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g class="group-path" transform="translate(-138.000000, -586.000000)" fill="#0052CC"><path d="M145.2803,586.507862 L144.2193,587.568863 L145.9393,589.287862 L138.7503,589.287862 C138.3363,589.287862 138.0003,589.623862 138.0003,590.037862 C138.0003,590.451862 138.3363,590.787862 138.7503,590.787862 L145.9393,590.787862 L144.2193,592.507862 L145.2803,593.568863 L148.8103,590.037862 L145.2803,586.507862 Z" id="Fill-1"></path></g></g></svg>
+                </a>
+              </div>
+          </article>
+
+          <article class="card" >
+            <img src="https://wac-cdn.atlassian.com/dam/jcr:6d9dff44-2ca5-4310-b2f0-a7a88e67fe95/Customers-ANZ.jpg?cdnVersion=le" style="width:100%;height:auto;">
+            <div class="decotrate_card">
+              <img src="https://wac-cdn.atlassian.com/dam/jcr:9ef4193b-0ef1-444f-8fbe-a37471ef4791/anz_x2.png?cdnVersion=le" style="width:111px;">
+              <p>This 200-year old bank is still innovating and changing the way their 50,000 employees think and work.</p>
               <a href="#">Watch the video <svg class="link-arrow-image" width="11px" height="8px" viewBox="0 0 11 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g class="group-path" transform="translate(-138.000000, -586.000000)" fill="#0052CC"><path d="M145.2803,586.507862 L144.2193,587.568863 L145.9393,589.287862 L138.7503,589.287862 C138.3363,589.287862 138.0003,589.623862 138.0003,590.037862 C138.0003,590.451862 138.3363,590.787862 138.7503,590.787862 L145.9393,590.787862 L144.2193,592.507862 L145.2803,593.568863 L148.8103,590.037862 L145.2803,586.507862 Z" id="Fill-1"></path></g></g></svg>
               </a>
             </div>
-        </div>
+          </article>
 
-        <div class="col_box">
-            <img src="https://wac-cdn.atlassian.com/dam/jcr:fd3d464e-6c2b-4208-9d53-f8d858a3ab93/Customers-CancerResearch.jpg?cdnVersion=le" style="width:100%;height:230px;">
-            <div class="decorate_inside_property">
-              <img src="https://wac-cdn.atlassian.com/dam/jcr:0b805a47-37f3-4320-9520-2683ec9419c1/CancerResearch_2x.png?cdnVersion=le" style="width:121px;">
+          <article class="card">
+            <img src="https://wac-cdn.atlassian.com/dam/jcr:fd3d464e-6c2b-4208-9d53-f8d858a3ab93/Customers-CancerResearch.jpg?cdnVersion=le" style="width:100%;height:auto;">
+            <div class="decotrate_card">
+              <img src="https://wac-cdn.atlassian.com/dam/jcr:0b805a47-37f3-4320-9520-2683ec9419c1/CancerResearch_2x.png?cdnVersion=le" style="width:111px;">
               <p>Staff members, doctors, and researchers found a better way to track projects and collaborate on a cure for cancer.</p>
               <a href="#">Read their story <svg class="link-arrow-image" width="11px" height="8px" viewBox="0 0 11 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g class="group-path" transform="translate(-138.000000, -586.000000)" fill="#0052CC"><path d="M145.2803,586.507862 L144.2193,587.568863 L145.9393,589.287862 L138.7503,589.287862 C138.3363,589.287862 138.0003,589.623862 138.0003,590.037862 C138.0003,590.451862 138.3363,590.787862 138.7503,590.787862 L145.9393,590.787862 L144.2193,592.507862 L145.2803,593.568863 L148.8103,590.037862 L145.2803,586.507862 Z" id="Fill-1"></path></g></g></svg>
               </a>
             </div>
-        </div>
+          </article>
+        </main>
       </div>
     </section>
 
     <section id="atlassian_packages">
       <div class="container">
-          <div class="atlassian_packages_column">
-            <div class="atlassian_package">
-              <img src="https://wac-cdn.atlassian.com/dam/jcr:4ff0df24-0ef3-473f-aec7-b55190cec660/enterprise.png?cdnVersion=le" style="width:85px;">
-              <h3><a href="#">Atlassian Enterprise <svg class="link-arrow-image" width="11px" height="8px" viewBox="0 0 11 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g class="group-path" transform="translate(-138.000000, -586.000000)" fill="#0052CC"><path d="M145.2803,586.507862 L144.2193,587.568863 L145.9393,589.287862 L138.7503,589.287862 C138.3363,589.287862 138.0003,589.623862 138.0003,590.037862 C138.0003,590.451862 138.3363,590.787862 138.7503,590.787862 L145.9393,590.787862 L144.2193,592.507862 L145.2803,593.568863 L148.8103,590.037862 L145.2803,586.507862 Z" id="Fill-1"></path></g></g></svg>
-              </a></h3>
-              <p>The Atlassian Marketplace has thousands of apps that help your team customize and extend your Atlassian products.</p>
-            </div>
-          </div>
+        <main class="packages">
 
-          <div class="atlassian_packages_column">
-            <div class="atlassian_package">
-              <img src="https://wac-cdn.atlassian.com/dam/jcr:886db488-7340-4fc7-96b6-3ea299c132d5/marketplace.png?cdnVersion=le" style="width:85px;">
-              <h3><a href="#">Atlassian Marketplace <svg class="link-arrow-image" width="11px" height="8px" viewBox="0 0 11 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g class="group-path" transform="translate(-138.000000, -586.000000)" fill="#0052CC"><path d="M145.2803,586.507862 L144.2193,587.568863 L145.9393,589.287862 L138.7503,589.287862 C138.3363,589.287862 138.0003,589.623862 138.0003,590.037862 C138.0003,590.451862 138.3363,590.787862 138.7503,590.787862 L145.9393,590.787862 L144.2193,592.507862 L145.2803,593.568863 L148.8103,590.037862 L145.2803,586.507862 Z" id="Fill-1"></path></g></g></svg>
-              </a></h3>
-              <p>The Atlassian Marketplace has thousands of apps that help your team customize and extend your Atlassian products.</p>
-            </div>
-          </div>
+          <article class="package">
+            <img src="https://wac-cdn.atlassian.com/dam/jcr:4ff0df24-0ef3-473f-aec7-b55190cec660/enterprise.png?cdnVersion=le" style="width:85px;">
+            <h3><a href="#">Atlassian Enterprise <svg class="link-arrow-image" width="11px" height="8px" viewBox="0 0 11 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g class="group-path" transform="translate(-138.000000, -586.000000)" fill="#0052CC"><path d="M145.2803,586.507862 L144.2193,587.568863 L145.9393,589.287862 L138.7503,589.287862 C138.3363,589.287862 138.0003,589.623862 138.0003,590.037862 C138.0003,590.451862 138.3363,590.787862 138.7503,590.787862 L145.9393,590.787862 L144.2193,592.507862 L145.2803,593.568863 L148.8103,590.037862 L145.2803,586.507862 Z" id="Fill-1"></path></g></g></svg>
+            </a></h3>
+            <p>Atlassian Enterprise offers the business critical products, premier support, and strategic services you need to get the most out of your Atlassian applications.</p>
+          </article>
 
+          <article class="package">
+            <img src="https://wac-cdn.atlassian.com/dam/jcr:886db488-7340-4fc7-96b6-3ea299c132d5/marketplace.png?cdnVersion=le" style="width:85px;">
+            <h3><a href="#">Atlassian Marketplace <svg class="link-arrow-image" width="11px" height="8px" viewBox="0 0 11 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g class="group-path" transform="translate(-138.000000, -586.000000)" fill="#0052CC"><path d="M145.2803,586.507862 L144.2193,587.568863 L145.9393,589.287862 L138.7503,589.287862 C138.3363,589.287862 138.0003,589.623862 138.0003,590.037862 C138.0003,590.451862 138.3363,590.787862 138.7503,590.787862 L145.9393,590.787862 L144.2193,592.507862 L145.2803,593.568863 L148.8103,590.037862 L145.2803,586.507862 Z" id="Fill-1"></path></g></g></svg>
+            </a></h3>
+            <p>The Atlassian Marketplace has thousands of apps that help your team customize and extend your Atlassian products.</p>
+          </article>
+
+        </main>
       </div>
     </section>
 
@@ -236,36 +246,38 @@
 
     <section id="recommended_reading_lists">
       <div class="container">
-        <div class="list">
-          <img src="https://wac-cdn.atlassian.com/dam/jcr:c50c05a1-8ccb-4af1-9c3b-22ec5cb72626/icon-book.png?cdnVersion=le" style="width:40px;">
-          <h3>Amazing Content</h3>
-          <ul>
+        <div class="lists">
+          <div class="list">
+            <img src="https://wac-cdn.atlassian.com/dam/jcr:c50c05a1-8ccb-4af1-9c3b-22ec5cb72626/icon-book.png?cdnVersion=le" style="width:40px;">
+            <h3>Amazing Content</h3>
+            <ul>
 
-            <li><a href="#"></a>Atlassian Team Playbook</li>
-            <li><a href="#"></a>Agile development</li>
-            <li><a href="#"></a>Git tutorial</li>
-            <li><a href="#"></a>Service management</li>
-            <li><a href="#"></a>Continuous delivery</li>
-          </ul>
-        </div>
-        <div class="list">
-          <img src="https://wac-cdn.atlassian.com/dam/jcr:079d47ab-e16c-4787-8d15-e94ad38dfc3d/icon-popular.png?cdnVersion=le" style="width:40px;">
-          <h3>Popular blogs</h3>
-          <ul>
-            <li><a href="#"></a>How to be smart in a world of silly team building</li>
-            <li><a href="#"></a>I ran a redicrously complex engineering project(and survived)</li>
-            <li><a href="#"></a>If you want an open company culture, make this a habit</li>
-            <li><a href="#"></a>17 ways emotionally intelligent leaders build a culture of trust.</li>
-          </ul>
-        </div>
-        <div class="list">
-          <img src="https://wac-cdn.atlassian.com/dam/jcr:3a9a9ad6-309c-4655-b194-4acb93d24e44/icon-announcement.png?cdnVersion=le" style="width:40px;">
-          <h3>In the news</h3>
-          <ul>
-            <li><a href="#"></a>Atlassian announces a new parthnership with Slack</li>
-            <li><a href="#"></a>Atlassian packages tools to help enterprises accelerate DevOps adoption</li>
-            <li><a href="#"></a>Business Software Maker Atlassian Says It's Going All-In With Amazon Cloud </li>
-          </ul>
+              <li><a href="#"></a>Atlassian Team Playbook</li>
+              <li><a href="#"></a>Agile development</li>
+              <li><a href="#"></a>Git tutorial</li>
+              <li><a href="#"></a>Service management</li>
+              <li><a href="#"></a>Continuous delivery</li>
+            </ul>
+          </div>
+          <div class="list">
+            <img src="https://wac-cdn.atlassian.com/dam/jcr:079d47ab-e16c-4787-8d15-e94ad38dfc3d/icon-popular.png?cdnVersion=le" style="width:40px;">
+            <h3>Popular blogs</h3>
+            <ul>
+              <li><a href="#"></a>How to be smart in a world of silly team building</li>
+              <li><a href="#"></a>I ran a redicrously complex engineering project(and survived)</li>
+              <li><a href="#"></a>If you want an open company culture, make this a habit</li>
+              <li><a href="#"></a>17 ways emotionally intelligent leaders build a culture of trust.</li>
+            </ul>
+          </div>
+          <div class="list">
+            <img src="https://wac-cdn.atlassian.com/dam/jcr:3a9a9ad6-309c-4655-b194-4acb93d24e44/icon-announcement.png?cdnVersion=le" style="width:40px;">
+            <h3>In the news</h3>
+            <ul>
+              <li><a href="#"></a>Atlassian announces a new parthnership with Slack</li>
+              <li><a href="#"></a>Atlassian packages tools to help enterprises accelerate DevOps adoption</li>
+              <li><a href="#"></a>Business Software Maker Atlassian Says It's Going All-In With Amazon Cloud </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -286,7 +298,6 @@
               <li><a href="#">Bitbucket</a></li>
               <li><a class="mark_link" href="#">View all products</a></li>
             </ul>
-
           </div>
           <div class="navigation">
             <h4>RESOURCES</h4>
