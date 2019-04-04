@@ -431,6 +431,10 @@ article#main_left_col {
   color: #0033cc;
 }
 
+#recommended_reading_lists li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
 
 
 
